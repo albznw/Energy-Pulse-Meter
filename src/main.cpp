@@ -39,12 +39,12 @@ int colors, blinkTimes;
 #define OTA_HOSTNAME                "EnergyPulseMeter" // Leave empty for esp8266-[ChipID]
 #define WIFI_MANAGER_STATION_NAME   "EnergyPulseMeter" // Leave empty for auto generated name ESP + ChipID
 
-#define STATUS_LED_BLUE_PIN         D6 // Blue status led pin
-#define STATUS_LED_GREEN_PIN        D7 // Green status led pin
-#define STATUS_LED_RED_PIN          D8 // Red status led pin
-#define SENSOR_ONE_PIN              D1 // Pulse sensor one
-#define SENSOR_TWO_PIN              D2 // Pulse sensor two
-#define SENSOR_ONE_INDICATOR_PIN    D5 // Sensor one indicator led 
+#define STATUS_LED_BLUE_PIN         D1 // Blue status led pin
+#define STATUS_LED_GREEN_PIN        D2 // Green status led pin
+#define STATUS_LED_RED_PIN          D7 // Red status led pin
+#define SENSOR_ONE_PIN              D5 // Pulse sensor one
+#define SENSOR_TWO_PIN              D6 // Pulse sensor two
+#define SENSOR_ONE_INDICATOR_PIN    D3 // Sensor one indicator led 
 #define SENSOR_TWO_INDICATOR_PIN    D0 // Sensor two indicator led
 
 bool OTA_ON = true; // Turn on OTA
