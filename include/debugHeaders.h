@@ -8,6 +8,7 @@
 #define LOG_ENABLED
 #define TRACE_ENABLED
 #define ERRORS_ENABLED
+#define DEBUG_ENABLED
 
 
 
@@ -48,6 +49,12 @@
   #define Err(...)
   #define ErrFunc(...)
   #define Errln(...)
+#endif
+
+#ifdef DEBUG_ENABLED
+  #define Debugf(...)      Serial.printf( __VA_ARGS__ )
+#else
+  #define Debugf(...)
 #endif
 
 #endif // DEBUG_H_
